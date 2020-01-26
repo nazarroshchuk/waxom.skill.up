@@ -240,6 +240,54 @@ svg.line {
     height: auto;
     width: 100%;
 }
+/* multipurpose */
+.multipurpose {
+   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.multipurpose .wrapper-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-content a {
+    text-decoration: none;
+    text-align: center;
+    padding: 19px 29px 20px 28px;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    color: #ffffff;
+    font-family: Raleway, Arial, Helvetica, sans-serif ;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+.multipurpose-items {
+    margin-left: 30px;
+}
+.multipurpose-items h3 {
+    margin: 0;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 47px;
+}
+.multipurpose-items h3 span {
+    color: #c7b299;
+}
+.multipurpose-items h4 {
+    margin: 0;
+    color: #615855;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 47px;
+}
+
 
 
 
