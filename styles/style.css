@@ -33,11 +33,11 @@ a.button {
     padding: 10px 29px 12px 28px;
     text-transform: uppercase;
     text-decoration: none;
-    transition: background-color 0.5s, color .5s;
+    transition: background-color 0.5s, color .5s, transform .5s;
 }
 a.button:hover {
     background-color: rgba(17, 17, 17, 1);
-    color: #736357;
+    color: #ffffff;
 }
 header { 
     background: url(../images/photo-header.jpg);            
