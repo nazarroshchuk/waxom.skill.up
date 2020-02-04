@@ -19,6 +19,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
+    margin: 0;
 }
 a.button {
     box-shadow: inset 0 -3px 0 #736357;
@@ -31,6 +32,11 @@ a.button {
     padding: 18px 42px 18px 45px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: background-color 0.5s, color .5s;
+}
+a.button:hover {
+    background-color: rgba(17, 17, 17, 1);
+    color: #736357;
 }
 header { 
     background: url(../images/photo-header.jpg);            
@@ -98,7 +104,17 @@ h3.logo-title {
     margin-right: 30px;
     width: 70px;
     justify-content: space-around;
+    
 }
+.header-icon .cart,
+.header-icon .search {
+    transition: transform .3s;
+}
+.header-icon .cart:hover,
+.header-icon .search:hover {
+    transform: scale(1.1,1.1);
+}
+
 /* SLIDER */
 .header-slider {
     margin: 0 auto;
@@ -249,25 +265,24 @@ svg.line {
     align-items: center;
 }
 .multipurpose-btn a {
-    padding: 19px 29px 20px 28px;
     margin-right: 30px;
+    padding: 19px 29px 20px 28px;
 }
 .multipurpose-items {
     margin-left: 30px;
 }
 .multipurpose-items h3 {
-    margin: 0;
     color: #ffffff;
     font-family: Raleway;
     font-size: 28px;
     font-weight: 400;
+    margin: 0;
     padding-top: 47px;
 }
 .multipurpose-items h3 span {
     color: #c7b299;
 }
 .multipurpose-items h4 {
-    margin: 0;
     color: #615855;
     font-family: Montserrat;
     font-size: 18px;
@@ -284,7 +299,6 @@ svg.line {
 .blocks-descriptions p {
     margin: 0;
     padding: 24px 0 40px 0 ;
-    
 }
 .projects-menu {
     text-align: center;
@@ -300,14 +314,14 @@ svg.line {
     margin-left: 9px;
 }
 .projects-menu a {
-    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
     color: #8c8c8c;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 300;
     padding: 10px 24px 11px 24px;
-    border-radius: 3px;
-    border: 1px solid #ebebeb;
+    text-decoration: none;
 }
 .projects-menu a:hover{
     border: 1px solid #998675;
@@ -315,15 +329,11 @@ svg.line {
     color: #ffffff;
 }
 .projects-galery {
-    padding: 40px 30px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 40px 30px;
+    justify-content: space-between;  
 }
-
-
-
-
 figure {
     max-width: 370px;
     margin: 0 0 30px 0;
@@ -345,16 +355,16 @@ figure {
     background: rgba(17, 17, 17, 0.7);;
 }
 .icon {
-  position: absolute;
   left: 40%;
-  top: 50%;
   opacity: 0;
+  position: absolute;
+  top: 50%;
   transition: opacity .35s ease;
   z-index: 3;
 }
 .icon img {
-    width: 26px;
     height: 25px;
+    width: 26px;
 }
 .icon img + img {
      margin-left: 28px;
@@ -370,16 +380,16 @@ figure:hover  figcaption{
     background-color: #362f2d;
 }
 .triangle {
-    position: relative;
-    width: 0;
-    height: 0;
     border: 0 solid transparent;
     border-right-width: 15px;
     border-left-width: 15px;
     border-bottom: 10px solid #fbfaf8;
+    height: 0;
     margin: -10px 0 0 19px;
-    z-index: 10;
+    position: relative;
     transition: border-bottom 0.5s ease;
+    width: 0;
+    z-index: 10;  
 }
 figure:hover  .triangle {
      border-bottom: 10px solid #362f2d;
@@ -392,7 +402,6 @@ figcaption .name {
     margin: 0 0 0 29px;
     padding-top: 25px;
 }
-
 figcaption .type {
     font-family: Montserrat;
     font-size: 14px;
@@ -402,12 +411,72 @@ figcaption .type {
     padding: 10px 0 17px 0;
 }
 .projects-btn {
-    text-align: center;
     padding: 15px 0 80px 0;
+    text-align: center;
 }
-.projects-btn a {
-    
+/* VIDEO PRESENTATION */
+.video-present-wrap {
+    background-image: url(../images/video-presentation.jpg); 
+    background-size: cover;
 }
+.video-present {
+    background-color: rgba(17, 17, 17, 0.5); 
+}
+.video-present-items {
+    margin: 0 auto;
+    text-align: center;
+}
+.play-btn-wrap {
+    padding-top: 210px;
+}
+.play-btn {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.play-btn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+}
+.play-btn:hover img {
+    opacity: 0.4;
+}
+.video-present-items h3, .video-present-items p {
+    color: #ffffff;
+    margin: 0;
+}
+.video-present-items h3 {
+    font-weight: 500;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    padding-top: 44px;
+}
+.video-present-items p {
+    max-width: 562px;
+    margin: 0 auto;
+    padding: 24px 0 0 0;
+}
+.video-present-items .time {
+    padding: 30px 0 207px 0;
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+/* Excellent for Mobile Devices */
 
 
 
