@@ -1,0 +1,124 @@
+@media (max-width: 1200px) {
+
+    .main-menu, .main-menu ul, .header-icon {
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width: 1030px) {
+    .projects-galery {
+          justify-content: space-around;
+      }
+       .exellent-items {
+         margin: 0 30px;
+         font-size: 0.9em;
+     }
+
+}
+
+@media (max-width: 960px) {
+     .header-up {
+         flex-wrap: wrap;
+     }
+     .exellent .wrapper-content {
+         justify-content: center;
+        
+     }
+     .exellent-items {
+         padding: 50px 0 50px 0;
+     }
+     .exellent img {
+         display: none;
+     }
+     
+}
+@media (max-width: 775px) {
+ .projects-galery {
+        padding: 40px 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .multipurpose .wrapper-content {
+        flex-direction: column;
+        align-content: center;
+    }
+    .multipurpose-btn a {
+        margin: 0 0 25px 0;
+    }
+     .exellent-items {
+         margin: 0 30px;
+         font-size: 0.9em;
+     }
+}
+@media (max-width: 685px) {
+     .main-menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+         max-width: 300px; 
+    }
+    .main-menu ul a {
+        font-size: 30px;
+        line-height: 55px;
+    }
+    .navigation-slider, .navigation-slider button {
+        display: none;
+    }
+    .header-up {
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header-slider-content {
+        margin: 50px 20px 20px 20px;
+        font-size: 0.5em;
+        line-height: 49px;
+    }
+    .header-slider-content a {
+        line-height: 28px;
+    }
+    .header-slider-content p {
+        width: auto;
+    }
+    .logo-wrap {
+        padding-top: 20px;
+    }
+     .projects-galery .container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 625px) {
+    .services-item +.services-item {
+        margin: 0 auto;
+    }
+
+}
+@media (max-width: 515px) {
+    .projects-menu ul {
+        padding: 0;
+    }
+    .projects-menu ul li {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 375px) {
+    .main-menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+         max-width: 230px; 
+    }
+    .main-menu ul a {
+        font-size: 30px;
+        line-height: 55px;
+    }
+    .navigation-slider, .navigation-slider button {
+        display: none;
+    }
+    .header-up {
+        padding: 0;
+        justify-content: center;
+    }
+}
