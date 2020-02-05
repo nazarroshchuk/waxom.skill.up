@@ -415,6 +415,9 @@ figcaption .type {
     padding: 15px 0 80px 0;
     text-align: center;
 }
+.projects-btn a {
+    padding: 10px 44px 12px 44px; 
+}
 /* VIDEO PRESENTATION */
 .video-present-wrap {
     background-image: url(../images/video-presentation.jpg); 
@@ -468,128 +471,81 @@ figcaption .type {
     font-size: 14px;
     font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
 /* Excellent for Mobile Devices */
-
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-
-    .main-menu, .main-menu ul, .header-icon {
-        padding: 0;
-        margin: 0;
-    }
+.exellent .wrapper-content {
+    display: flex;
+    justify-content: center;
 }
-@media (max-width: 1030px) {
-    .projects-galery {
-          justify-content: space-around;
-      }
+.exellent img {
+    padding: 80px 0 0 76px;
 }
-
-@media (max-width: 960px) {
-     .header-up {
-         flex-wrap: wrap;
-     }
-     
+.exellent-items {
+    max-width: 658px;
+    padding: 195px 0 0 30px;
 }
-@media (max-width: 775px) {
- .projects-galery {
-        padding: 40px 30px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .multipurpose .wrapper-content {
-        flex-direction: column;
-        align-content: center;
-    }
-    .multipurpose-btn a {
-        margin: 0 0 25px 0;
-    }
+.exellent-items h3 {
+    font-weight: 600;
 }
-@media (max-width: 685px) {
-     .main-menu ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px;
-         max-width: 300px; 
-    }
-    .main-menu ul a {
-        font-size: 30px;
-        line-height: 55px;
-    }
-    .navigation-slider, .navigation-slider button {
-        display: none;
-    }
-    .header-up {
-        padding: 0;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .header-slider-content {
-        margin: 50px 20px 20px 20px;
-        font-size: 0.5em;
-        line-height: 49px;
-    }
-    .header-slider-content a {
-        line-height: 28px;
-    }
-    .header-slider-content p {
-        width: auto;
-    }
-    .logo-wrap {
-        padding-top: 20px;
-    }
+.exellent-items ul {
+    list-style: none;
+    margin: 0 0 0 50px;
+    padding: 0;
 }
-
-@media (max-width: 625px) {
-    .services-item +.services-item {
-        margin: 0 auto;
-    }
-
+.exellent-items li {
+    background-image: url(../images/exellent-list.png);
+    background-repeat: no-repeat;
+    line-height: 32px;
+    padding: 0 0 0 50px;
+    background-position: left;
 }
-@media (max-width: 515px) {
-    .projects-menu ul {
-        padding: 0;
-    }
-    .projects-menu ul li {
-        margin-top: 25px;
-    }
+/* STATISTICS */
+.statistics {
+    background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
 }
-@media (max-width: 375px) {
-    .main-menu ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px;
-         max-width: 230px; 
-    }
-    .main-menu ul a {
-        font-size: 30px;
-        line-height: 55px;
-    }
-    .navigation-slider, .navigation-slider button {
-        display: none;
-    }
-    .header-up {
-        padding: 0;
-        justify-content: center;
-    }
-    .projects-galery .container img {
-        width: 100%;
-        height: auto;
-    }
-
+.statistics .wrapper-content {
+    display: flex;
+    justify-content: center;
+}
+.statistic-item {
+    text-align: center;
+    padding: 70px 0 60px 0;
+}
+.statistic-item +.statistic-item  {
+    margin-left: 70px;
+}
+.fas, .far {
+    font-size: 44px;
+    color: #fff;
+}
+.statistic-item h3, .statistic-item p {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+}
+.statistic-item h3 {
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 25px;
+}
+.statistic-item p {
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 30px;
+    text-transform: uppercase;
+    line-height: 0;
+}
+.statistic-item  .line {
+    padding-top: 30px;
+}
+.statistic-item  .line rect {
+    fill: #fff;
+}
+.statistic-item:hover .fas,
+.statistic-item:hover .far,
+.statistic-item:hover rect {
+    color:#c7b299;
+    fill: #c7b299;
 }
 
