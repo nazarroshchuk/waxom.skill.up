@@ -375,10 +375,14 @@ svg.line {
   transition: opacity .35s ease;
   z-index: 3;
 }
-.icon img {
-    height: 25px;
-    width: 26px;
+.projects-galery .container img {
+    width: auto;
+    height: auto;
 }
+/* .icon img {
+    width: auto;
+    height: auto;
+} */
 .icon img + img {
      margin-left: 28px;
 }

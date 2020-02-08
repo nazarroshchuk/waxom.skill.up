@@ -123,11 +123,7 @@
     .logo-wrap {
         padding-top: 20px;
     }
-     .projects-galery .container img {
-        width: 100%;
-        height: auto;
-    }
-      .projects-menu ul {
+    .projects-menu ul {
         padding: 0;
     }
     .projects-menu ul li {
