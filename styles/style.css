@@ -71,6 +71,7 @@ header {
 header .logo {
     height: 46px;
     width: 56px; 
+    cursor: pointer;
 }
 h3.logo-title {
     font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -94,6 +95,7 @@ h3.logo-title {
     font-weight: 300;
     text-decoration: none; 
     color: #ffffff;
+    transition: color .5s;
 }
 .main-menu ul a:hover {
     color: #c7b299;
@@ -112,6 +114,7 @@ h3.logo-title {
 .header-icon .cart:hover,
 .header-icon .search:hover {
     transform: scale(1.1,1.1);
+    cursor: pointer;
 }
 /* SLIDER */
 .header-slider-item {
@@ -160,10 +163,10 @@ h3.logo-title {
     height: 60%;
 }
 .header-slider .flickity-prev-next-button.previous {
-   left: -15%;
+   left: -5%;
 }
 .header-slider .flickity-prev-next-button.next {
-    right: -15%;
+    right: -5%;
 }
 /* Navigation dots */
 .header-slider .flickity-page-dots {

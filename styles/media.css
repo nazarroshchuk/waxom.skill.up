@@ -1,15 +1,30 @@
-@media (max-width: 1200px) {
-
+@media (min-width: 1980px) {
+    .header-slider .flickity-prev-next-button.previous {
+   left: -15%;
+}
+    .header-slider .flickity-prev-next-button.next {
+    right: -15%;
+}
+}
+@media (max-width: 1230px) {
     .main-menu, .main-menu ul, .header-icon {
         padding: 0;
         margin: 0;
     }
     .header-slider .flickity-prev-next-button.previous {
-        left: 20%;
+        left: 0;
 }
     .header-slider .flickity-prev-next-button.next {
-        right: 20%;
+        right: 0;
+    }
+    .recent-posts-slider {
+        margin: 0 30px;
+    }
 }
+@media (max-width: 1080px) {
+     .exellent img {
+        display: none;
+    }
 }
 @media (max-width: 1030px) {
     .projects-galery {
@@ -22,14 +37,21 @@
      .recent-posts-slider  .flickity-prev-next-button.previous {
         left: 42%;
 }
-.recent-posts-slider .flickity-prev-next-button.next {
+    .recent-posts-slider .flickity-prev-next-button.next {
         right: 42%;
-}
+    }
+    .partners img {
+        margin: 20px;
+    }
 }
 @media (max-width: 960px) {
      .header-up {
          flex-wrap: wrap;
      }
+      .header-icon {
+        padding-top: 20px;
+        margin: 0 auto;
+    }
      .exellent .wrapper-content {
          justify-content: center;
         
@@ -105,29 +127,29 @@
         width: 100%;
         height: auto;
     }
+      .projects-menu ul {
+        padding: 0;
+    }
+    .projects-menu ul li {
+        margin-top: 25px;
+    }
 }
 
 @media (max-width: 625px) {
     .services-item +.services-item {
         margin: 0 auto;
     }
-
-}
-@media (max-width: 515px) {
-    .projects-menu ul {
-        padding: 0;
-    }
-    .projects-menu ul li {
-        margin-top: 25px;
-    }
-    .slider-title {
-        line-height: 60px;
+      .slider-title {
+        line-height: 35px;
         font-size: 2em;
 }
     .slider-item-over {
         font-size: 1.5em;
         line-height: 60px;
     }
+
+}
+@media (max-width: 515px) {
 }
 @media (max-width: 375px) {
     .main-menu ul {
