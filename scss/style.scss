@@ -720,3 +720,99 @@ svg.line {
 }
 
 
+// ABOUT WAXOM
+
+@mixin  wrapper() {
+    max-width: 1230px;
+    margin: 0 auto;   
+}
+@mixin flexible() {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-waxom {
+   background-color: #191919;
+   .about-waxom-content {
+       @include wrapper();
+       @include flexible();
+       justify-content: space-between;
+       padding: 80px 0;
+   }
+   h3 {
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+   }
+   p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+   }
+   h4 {
+        color: #363636;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+        margin: 0;
+   }
+   hr {
+      color: #252525;
+      width: 260px;
+      margin: 15px 0;
+
+   }
+   a {
+       text-decoration: none;
+       color: #00bff3;
+   }
+   .waxom-items {
+       max-width: 257px;
+       img {
+            padding-bottom: 30px;
+       }
+       p {
+           padding-bottom: 30px;
+       }
+       a {
+            color: #d1d1d1;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            &::after {
+                content: url(../images/about-waxom-link.svg);
+                margin-left: 10px;
+            }
+       }
+   }
+   .recent-items {
+        max-width: 262px;
+        padding-top: 20px;
+       h3 {
+            padding-bottom: 30px;
+           }
+   }
+   .twitter-items {
+       max-width: 267px;
+       padding-top: 20px;
+       h3 {
+            padding-bottom: 30px;
+           }
+   }
+   .widget-items {
+       max-width: 270px;
+       padding-top: 20px;
+        h3 {
+                padding-bottom: 15px;
+           }
+       .widget-item-galery {
+           @include flexible();
+           justify-content: space-between;
+           img {
+                padding-top: 10px;
+           }
+       }
+   }
+}
