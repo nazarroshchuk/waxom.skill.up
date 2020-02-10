@@ -6,6 +6,21 @@
     right: -15%;
 }
 }
+@media (max-width: 1280px) {
+    .about-waxom .about-waxom-content {
+      padding: 65px;
+      justify-content: center;
+    }  
+    .about-waxom .waxom-items,
+    .about-waxom .recent-items,
+    .about-waxom .twitter-items,
+    .about-waxom .widget-items {
+        padding: 50px;
+    } 
+    footer .wrap {
+        justify-content: space-around;
+    }
+}
 @media (max-width: 1230px) {
     .main-menu, .main-menu ul, .header-icon {
         padding: 0;
@@ -20,6 +35,9 @@
     .recent-posts-slider {
         margin: 0 30px;
     }
+    .about-waxom-content {
+      padding: 65px;
+}
 }
 @media (max-width: 1080px) {
      .exellent img {
@@ -92,6 +110,12 @@
          margin: 0 30px;
          font-size: 0.9em;
      }
+     .about-waxom .waxom-items,
+    .about-waxom .recent-items,
+    .about-waxom .twitter-items,
+    .about-waxom .widget-items {
+        padding: 20px;
+    }
 }
 @media (max-width: 685px) {
      .main-menu ul {
@@ -145,7 +169,21 @@
     }
 
 }
-@media (max-width: 515px) {
+@media (max-width: 435px) {
+    .about-waxom .widget-items .widget-item-galery {
+        justify-content: center;
+    }
+    .about-waxom .widget-items .widget-item-galery img {
+        width: 100%;
+    }
+     footer .menu {  
+        padding: 20px 30px;
+        justify-content: center;
+    }
+    footer ul {
+        flex-direction: column;
+        align-content: center;
+    }
 }
 @media (max-width: 375px) {
     .main-menu ul {
@@ -162,4 +200,5 @@
         padding: 0;
         justify-content: center;
     }
+   
 }

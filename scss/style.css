@@ -9,6 +9,11 @@ body {
 }
 
 /* common for all blocks */
+.wrapper-content {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
 .blocks-article {
   color: #555555;
   font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -62,11 +67,6 @@ header {
 }
 
 /* MENU + LOGO + ICON */
-.wrapper-content {
-  max-width: 1230px;
-  margin: 0 auto;
-}
-
 .header-up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,33 +323,22 @@ svg.line {
   background-color: #fbfaf8;
 }
 
-.realisation-items {
-  max-height: 700px;
+.realisation .wrapper-content {
   text-align: center;
+  font-size: 39px;
 }
 
-.realisation-items-title {
-  max-width: 757px;
-  margin: 0 auto;
-  min-height: 218px;
-}
-
-.realisation-items-title h3 {
+.realisation h3 {
   margin: 0;
-  padding-top: 83px;
+  padding: 74px 0 20px 0;
 }
 
-.realisation-items-title p {
+.realisation p {
   margin: 0;
-  padding-top: 24px;
+  padding: 0 0 40px 0;
 }
 
-.realisation-items-img {
-  max-height: 482px;
-  font-size: -webkit-xxx-large;
-}
-
-.realisation-items-img img {
+.realisation img {
   height: auto;
   width: 100%;
 }
@@ -498,7 +487,7 @@ svg.line {
 }
 
 .projects-galery .container img {
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -953,7 +942,7 @@ svg.line {
 }
 
 .about-waxom h3 {
-  color: #ffffff;
+  color: #fff;
   font-family: Raleway;
   font-size: 24px;
   font-weight: 700;
@@ -977,7 +966,6 @@ svg.line {
 
 .about-waxom hr {
   color: #252525;
-  width: 260px;
   margin: 15px 0;
 }
 
@@ -1003,11 +991,21 @@ svg.line {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .about-waxom .waxom-items a::after {
   content: url(../images/about-waxom-link.svg);
   margin-left: 10px;
+}
+
+.about-waxom .waxom-items a::after:hover {
+  opacity: .8;
+}
+
+.about-waxom .waxom-items a:hover {
+  opacity: .8;
 }
 
 .about-waxom .recent-items {
@@ -1019,6 +1017,14 @@ svg.line {
   padding-bottom: 30px;
 }
 
+.about-waxom .recent-items .recent-item:hover h4 {
+  color: #fff;
+}
+
+.about-waxom .recent-items .recent-item:hover p {
+  color: #c7b299;
+}
+
 .about-waxom .twitter-items {
   max-width: 267px;
   padding-top: 20px;
@@ -1026,6 +1032,14 @@ svg.line {
 
 .about-waxom .twitter-items h3 {
   padding-bottom: 30px;
+}
+
+.about-waxom .twitter-items .twitter-item:hover h4 {
+  color: #fff;
+}
+
+.about-waxom .twitter-items .twitter-item:hover p {
+  color: #c7b299;
 }
 
 .about-waxom .widget-items {
@@ -1050,5 +1064,96 @@ svg.line {
 
 .about-waxom .widget-items .widget-item-galery img {
   padding-top: 10px;
+}
+
+footer {
+  background-color: #111111;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+footer .wrap {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 38px 0 45px 0;
+}
+
+footer h4 {
+  margin: 0;
+}
+
+footer ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 430px;
+  padding: 0;
+}
+
+footer .menu span {
+  color: #959595;
+}
+
+footer .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+}
+
+footer .menu ul a {
+  text-decoration: none;
+  color: #555555;
+  border-left: 1px solid  #252525;
+  padding: 0 10px;
+  height: 14px;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+footer .menu ul a:hover {
+  color: #c7b299;
+}
+
+footer .designed {
+  min-width: 320px;
+}
+
+footer .designed ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .designed span {
+  color: #959595;
 }
 /*# sourceMappingURL=style.css.map */
