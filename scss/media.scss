@@ -6,6 +6,17 @@
     right: -15%;
 }
 }
+@media (max-width: 1400px) {
+    .header-slider {
+        .flickity-prev-next-button.previous {
+            left: 50px;
+                
+        }   
+        .flickity-prev-next-button.next {
+            right: 50px;
+        }
+    } 
+}
 @media (max-width: 1280px) {
     .about-waxom .about-waxom-content {
       padding: 65px;
@@ -34,15 +45,6 @@
         .header-icon {
             margin: 0 auto;
         }
-        .header-slider {
-            .flickity-prev-next-button.previous {
-                left: 50px;
-                
-            }   
-            .flickity-prev-next-button.next {
-                right: 50px;
-            }
-        } 
     }
     .realisation {
         p {
