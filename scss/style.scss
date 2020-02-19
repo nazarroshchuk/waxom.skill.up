@@ -216,7 +216,7 @@ header {
         }
     }
 }
-/* WEB & APP */
+/* SERVICES */
 .services {
     background: #ffffff;
     .wrapper {
@@ -264,6 +264,7 @@ header {
             svg {
                 fill: #555555;
                 height: 49px;
+                cursor: pointer;
             } 
             .line {
                 fill: #f1eee9;
@@ -273,8 +274,6 @@ header {
         }
     }
 }   
-
-
 /* REALISATION */
 .realisation {
     background-color: #fbfaf8; 
@@ -298,7 +297,6 @@ header {
         width: 100%;
     } 
 }
-
 /* multipurpose */
 .multipurpose {
     background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
@@ -335,7 +333,6 @@ header {
         }
     } 
 }
-
 /* latest-progects */
 .latest-progects {
     @include wrapper();
@@ -588,6 +585,7 @@ header {
             font-size: 44px;
             color: $colorWhite;
             transition: color .3s;
+            cursor: pointer;
         }
         h3, p {
             font-family: "Montserrat", $alternativeFonts;
@@ -789,10 +787,6 @@ header {
         }
     }
 }
-
-
-
-
 // ABOUT WAXOM
 .about-waxom {
    background-color: #191919;

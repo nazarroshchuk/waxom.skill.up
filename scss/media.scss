@@ -64,6 +64,11 @@
         right: 41%;
     }
 }
+@media (max-width: 1185px) {
+    .exellent .exellent-items {
+        padding: 30px 0;
+    }
+}
 @media (max-width: 1080px) {
      .exellent img {
         display: none;
@@ -90,9 +95,6 @@
     }
     .exellent .wrapper {
         justify-content: center; 
-    }
-    .exellent-items {
-        padding: 50px 0 50px 0;
     }
     .exellent img {
         display: none;

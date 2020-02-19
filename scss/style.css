@@ -272,7 +272,7 @@ header .header-up .header-icon .search:hover {
   width: 15px;
 }
 
-/* WEB & APP */
+/* SERVICES */
 .services {
   background: #ffffff;
 }
@@ -331,6 +331,7 @@ header .header-up .header-icon .search:hover {
 .services .services-items .services-item svg {
   fill: #555555;
   height: 49px;
+  cursor: pointer;
 }
 
 .services .services-items .services-item .line {
@@ -769,6 +770,7 @@ header .header-up .header-icon .search:hover {
   color: #fff;
   -webkit-transition: color .3s;
   transition: color .3s;
+  cursor: pointer;
 }
 
 .statistics .statistic-item h3, .statistics .statistic-item p {
