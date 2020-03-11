@@ -183,17 +183,15 @@
                     qui sequitur mutationem consuetudium.</p>
             </div>
         </div>
-        <div class="projects-menu">
-            <ul>
-                <li><a href="">All</a></li>
-                <li><a href="">Web Design</a></li>
-                <li><a href="">Mobile App</a></li>
-                <li><a href="">Illustration</a></li>
-                <li><a href="">Photography</a></li>
-            </ul>
+        <div id="myBtnContainer" class="projects-menu">
+            <button class="btn active" onclick="filterSelection('all')">All</button>
+            <button class="btn" onclick="filterSelection('web')">Web Design</button>
+            <button class="btn" onclick="filterSelection('app')">Mobile App</button>
+            <button class="btn" onclick="filterSelection('illus')">Illustration</button>
+            <button class="btn" onclick="filterSelection('photo')">Photography</button>
         </div>
-        <div class="projects-galery">
-            <figure>
+        <div class="projects-galery container-items">
+            <figure class="filterFig app">
                 <div class="container">
                     <img src="images/projects-photo-1.jpg" alt="" />
                     <div class="icon">
@@ -205,10 +203,10 @@
                 <figcaption>
                     <div class="triangle"></div>
                     <div class="name">Quam Nutamus Farum</div>
-                    <div class="type">Graphic Design, Mock-Up</div>
+                    <div class="type">Mobile App, Mock-Up</div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class="filterFig photo">
                 <div class="container">
                     <img src="images/projects-photo-2.jpg" alt="" />
                     <div class="icon">
@@ -220,10 +218,10 @@
                 <figcaption>
                     <div class="triangle"></div>
                     <div class="name">Quam Nutamus Farum</div>
-                    <div class="type">Graphic Design, Mock-Up</div>
+                    <div class="type">Photography, Mock-Up</div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class="filterFig illus">
                 <div class="container">
                     <img src="images/projects-photo-3.jpg" alt="" />
                     <div class="icon">
@@ -238,7 +236,7 @@
                     <div class="type">Graphic Design, Mock-Up</div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class="filterFig photo">
                 <div class="container">
                     <img src="images/projects-photo-4.jpg" alt="" />
                     <div class="icon">
@@ -250,10 +248,10 @@
                 <figcaption>
                     <div class="triangle"></div>
                     <div class="name">Quam Nutamus Farum</div>
-                    <div class="type">Graphic Design, Mock-Up</div>
+                    <div class="type">Photography, Mock-Up</div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class="filterFig illus">
                 <div class="container">
                     <img src="images/projects-photo-5.jpg" alt="" />
                     <div class="icon">
@@ -268,7 +266,52 @@
                     <div class="type">Graphic Design, Mock-Up</div>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class="filterFig web">
+                <div class="container">
+                    <img src="images/projects-photoDevices-9.jpg" alt="" />
+                    <div class="icon">
+                        <img src="images/projects-link.svg" alt="">
+                        <img src="images/projects-lupa.svg" alt="">
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+                <figcaption>
+                    <div class="triangle"></div>
+                    <div class="name">Quam Nutamus Farum</div>
+                    <div class="type">Web Design, Mock-Up</div>
+                </figcaption>
+            </figure>
+            <figure class="filterFig app">
+                <div class="container">
+                    <img src="images/projects-photoHendPhone-7.jpg" alt="" />
+                    <div class="icon">
+                        <img src="images/projects-link.svg" alt="">
+                        <img src="images/projects-lupa.svg" alt="">
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+                <figcaption>
+                    <div class="triangle"></div>
+                    <div class="name">Quam Nutamus Farum</div>
+                    <div class="type">Mobile App, Mock-Up</div>
+                </figcaption>
+            </figure>
+            <figure class="filterFig web">
+                <div class="container">
+                    <img src="images/projects-photoMan-10.jpg" alt="" />
+                    <div class="icon">
+                        <img src="images/projects-link.svg" alt="">
+                        <img src="images/projects-lupa.svg" alt="">
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+                <figcaption>
+                    <div class="triangle"></div>
+                    <div class="name">Quam Nutamus Farum</div>
+                    <div class="type">Web Design, Mock-Up</div>
+                </figcaption>
+            </figure>
+            <figure class="filterFig photo">
                 <div class="container">
                     <img src="images/projects-photo-6.jpg" alt="" />
                     <div class="icon">
@@ -280,7 +323,7 @@
                 <figcaption>
                     <div class="triangle"></div>
                     <div class="name">Quam Nutamus Farum</div>
-                    <div class="type">Graphic Design, Mock-Up</div>
+                    <div class="type">Photography, Mock-Up</div>
                 </figcaption>
             </figure>
         </div>
@@ -293,7 +336,7 @@
         <div class="video-present">
             <div class="video-present-items">
                 <div class="play-btn-wrap">
-                    <div class="play-btn">
+                    <div id="play-btn" onclick="addClassForPlay()">
                         <img src="images/video-presentation-btn.png" alt="">
                     </div>
                 </div>
@@ -305,7 +348,13 @@
                 <div class="time">03:26</div>
             </div>
         </div>
+        <div id="video-for-play" class="video-present-play">
+            <iframe width="100%" height="705" src="https://www.youtube.com/embed/1yVF-N__JKk?controls=0?autoplay=1"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
     </section>
+
 
     <section class="exellent">
         <div class="wrapper">
@@ -588,6 +637,7 @@
     <script src="js/flickity.pkgd.min.js"></script>
     <script src="js/slider-cards.js"></script>
     <script src="js/slider-header.js"></script>
+    <script src="js/filter.js"></script>
     <script src="https://kit.fontawesome.com/045953e5cb.js" crossorigin="anonymous"></script>
 </body>
 

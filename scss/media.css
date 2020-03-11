@@ -69,6 +69,13 @@
   }
 }
 
+@media (max-width: 1171px) {
+  .projects-galery {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media (max-width: 1080px) {
   .exellent img {
     display: none;
@@ -76,10 +83,6 @@
 }
 
 @media (max-width: 1030px) {
-  .projects-galery {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
   .exellent-items {
     margin: 0 30px;
     font-size: 0.9em;
