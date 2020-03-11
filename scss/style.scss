@@ -547,15 +547,15 @@ header {
 
         }
     }
-    .video-present-play {
+    #ytplayer {
         position: absolute;
         width: 100%;
         left: 0;
         top: 0;
         display: none;
     }
-    .play-video {
-        display: block;
+    #ytplayer.play-video {
+        display: block;    
     }
 }
 /* Excellent for Mobile Devices */

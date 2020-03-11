@@ -694,7 +694,7 @@ header .header-up .header-icon .search:hover {
   font-weight: 400;
 }
 
-.video-present-wrap .video-present-play {
+.video-present-wrap #ytplayer {
   position: absolute;
   width: 100%;
   left: 0;
@@ -702,7 +702,7 @@ header .header-up .header-icon .search:hover {
   display: none;
 }
 
-.video-present-wrap .play-video {
+.video-present-wrap #ytplayer.play-video {
   display: block;
 }
 

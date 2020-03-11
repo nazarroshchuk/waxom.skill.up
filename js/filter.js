@@ -45,18 +45,6 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
-// Add active class to the current control button (play video)
 
-let playBtnVideo = document.getElementById('play-btn');
-// playBtnVideo.addEventListener("click", addClassForPlay());
 
-function addClassForPlay() {
-    let element, name, arr;
-    element = document.getElementById('video-for-play');
-    name = "play-video";
-    arr = element.className.split(" ");
-    if (arr.indexOf(name) === -1) {
-        element.className += " " + name;
-    }
-}
 
