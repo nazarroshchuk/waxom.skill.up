@@ -498,10 +498,9 @@ header .header-up .header-icon .search:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 40px 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 40px 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .projects-galery figure {

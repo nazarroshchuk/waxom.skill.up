@@ -384,8 +384,8 @@ header {
     }
     .projects-galery {
         @include flexible();
-        padding: 40px 30px;
-        justify-content: space-between;
+        padding: 40px 20px;
+        justify-content: space-around;
         figure {
             max-width: 370px;
             margin: 0 0 30px 0;
