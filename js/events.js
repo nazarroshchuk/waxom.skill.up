@@ -29,7 +29,7 @@ function topFunction() {
 }
 //Popup
 const closeBtnPopup = document.querySelector('.close');
-const popup = document.querySelector('.popup-slider');
+const popup = document.querySelector('.popup-in-slider');
 const openPopupBtn = document.getElementById('openPopup');
 
 openPopupBtn.addEventListener('click', function (etv) {

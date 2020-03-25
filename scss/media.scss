@@ -211,6 +211,9 @@
             padding: 20px;
         }
     }
+    .header-slider .header-slider-item {
+    
+    }
 }
 @media (max-width: 685px) {
     .header-slider-content {
@@ -300,5 +303,15 @@
             margin: 0;
             padding: 40px;
         }    
+    }
+    .popup-slider,
+    .popup-slider::after {
+        width: 90%;
+    }
+    body #myBtnUp {
+        right: 50px;
+    }
+    header .header-up-active .wrapper-header-up .header-up nav ul {
+        margin: 0;
     }
 }
