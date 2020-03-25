@@ -40,17 +40,28 @@ header {
   color: #fff;
 }
 
-header .header-fullwrap {
-  background-color: rgba(17, 17, 17, 0.7);
-  height: 100%;
+header .header-up-active.active {
+  background-color: rgba(17, 17, 17, 0.95);
+  z-index: 1000;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-header .wrapper {
+header .header-fullwrap {
+  background-color: rgba(17, 17, 17, 0.7);
+}
+
+header .wrapper-header-up {
   max-width: 1230px;
   margin: 0 auto;
 }
 
-header .header-up {
+header .wrapper-header-up .header-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,58 +71,42 @@ header .header-up {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px 0 0 0;
-  margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
 }
 
-header .header-up .logo-wrap {
+header .wrapper-header-up .header-up .logo-wrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 46px;
   margin-left: 30px;
-  width: 181px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-header .header-up header .logo {
-  height: 46px;
-  width: 56px;
+header .wrapper-header-up .header-up .logo-wrap .logo {
   cursor: pointer;
 }
 
-header .header-up h3.logo-title {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 34px;
-  font-weight: 400;
-  height: 34px;
-  margin: 0;
-  width: 115px;
+header .wrapper-header-up .header-up nav {
+  padding-bottom: 10px;
 }
 
-header .header-up nav ul {
+header .wrapper-header-up .header-up nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-  margin: 0 0 0 219px;
+  margin: 0 0 0 150px;
   padding: 0;
   width: 637px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-header .header-up nav ul a {
+header .wrapper-header-up .header-up nav ul a {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -121,11 +116,11 @@ header .header-up nav ul a {
   transition: color .5s;
 }
 
-header .header-up nav ul a:hover {
+header .wrapper-header-up .header-up nav ul a:hover {
   color: #c7b299;
 }
 
-header .header-up .header-icon {
+header .wrapper-header-up .header-up .header-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,16 +133,16 @@ header .header-up .header-icon {
       justify-content: space-around;
 }
 
-header .header-up .header-icon .cart,
-header .header-up .header-icon .search {
+header .wrapper-header-up .header-up .header-icon .cart,
+header .wrapper-header-up .header-up .header-icon .search {
   -webkit-transition: -webkit-transform 0.1s ease-in;
   transition: -webkit-transform 0.1s ease-in;
   transition: transform 0.1s ease-in;
   transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in;
 }
 
-header .header-up .header-icon .cart:hover,
-header .header-up .header-icon .search:hover {
+header .wrapper-header-up .header-up .header-icon .cart:hover,
+header .wrapper-header-up .header-up .header-icon .search:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   cursor: pointer;

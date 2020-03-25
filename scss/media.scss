@@ -33,12 +33,13 @@
     }
 }
 @media (max-width: 1230px) {
-    header {
+    header .header-up-active .wrapper-header-up {
+        
         .header-up {
-            justify-content: space-around;
+            justify-content: space-between;
             nav {
                 ul {
-                    margin: 0;
+                    margin: 0 0 0 30px;
                 }
             }   
         }
@@ -89,11 +90,14 @@
     }
 }
 @media (max-width: 960px) {
-    header {
+    header .header-up-active .wrapper-header-up {
         .header-icon {
-            padding-top: 20px;
+            padding: 20px 0;
             margin: 0 auto;
         }
+    }
+    header .header-up-active.active {
+        height: 160px;
     }
     .exellent .wrapper {
         justify-content: center; 
@@ -121,9 +125,11 @@
     }
 }
 @media (max-width: 850px) {
-         header {
+        header .header-up-active .wrapper-header-up {
         .header-up {
+            padding-top: 20px;
             justify-content: space-around;
+            margin-bottom: 30px;
             .logo-wrap {
                 padding: 20px;
             }
@@ -131,36 +137,43 @@
                 ul {
                     margin: 20px;
                 }
-            }   
-        }
-        .header-icon {
-            margin: 20px auto;
+            }
+            .header-icon {
+            margin: 0;
+            padding: 0;
+            } 
         }
     }
-
+    header .header-up-active .wrapper-header-up .header-up .logo-wrap {
+        padding: 0;
+        margin: 0;
+    }
 }
-@media (max-width: 775px) {
-     header {
-        .header-up {
+@media (max-width: 778px) {
+     header   {
+        .header-fullwrap .header-up-active.active {
+        background-color: none;
+        position: static;
+        height: auto;
+        }
+        .wrapper-header-up .header-up {
             flex-direction: column;
-            justify-content: space-around;
-            nav {
-                ul {
-                    flex-direction: column;
-                    align-items: center;
-                     li {
-                        margin-top: 25px;
-                        a{
-                            font-size: 30px;
-                            line-height: 25px;
-                        }
-                    }
-                }
-            }   
+            position: static;
         }
-        .header-icon {
-            margin: 0 auto;
-        }
+        .wrapper-header-up .header-up nav ul {
+           max-width: 300px ;
+           flex-direction: column;
+           text-align: center;
+       }
+       .wrapper-header-up .header-up nav ul li {
+           padding: 10px 0;
+       }
+       .header-up-active .wrapper-header-up .header-up .header-icon {
+           padding-bottom: 20px;
+       }
+       .wrapper-header-up .header-up nav ul a {
+           font-size: 30px;
+       }
         .header-slider-item {
             h1,h2 p {
                 padding: 20px;
