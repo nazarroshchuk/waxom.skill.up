@@ -4,6 +4,9 @@ $colorFooter: #111111;
 $color555: #555555;
 $colorFooterWaxom:#959595;
 $alternativeFonts: Arial, Helvetica, sans-serif;
+html {
+  scroll-behavior: smooth;
+}
 body {
     box-sizing: border-box;
     color: #8c8c8c;
@@ -53,7 +56,8 @@ a.button:hover {
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color 0.5s, color .5s, transform .5s;
-
+    outline: none;
+    cursor: pointer;
 }
 /* common for all blocks */
 a.button {
@@ -976,3 +980,14 @@ footer {
         }
     }
 }
+body #myBtnUp {
+    @include button();
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    padding: 15px;  
+    opacity: .7;
+    border:none;      
+}  
