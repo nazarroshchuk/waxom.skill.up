@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/flickity.min.css" media="screen">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="scss/media.css">
@@ -54,7 +55,7 @@
                     <p class="slider-item-below ">Nam liber tempor cum soluta nobis eleifend option congue nihil
                         imperdiet doming id quod mazim placerat facer possim
                         assum.</p>
-                    <a class="button" href="#">Get Started</a>
+                    <a class="button" id="openPopup" href="#">Get Started</a>
                 </div>
                 <div class="header-slider-item">
                     <h2 class="slider-item-over">Unique and Modern Design</h2>
@@ -62,7 +63,7 @@
                     <p class="slider-item-below ">Nam liber tempor cum soluta nobis eleifend option congue nihil
                         imperdiet doming id quod mazim placerat facer possim
                         assum.</p>
-                    <a class="button" href="#">Get Started</a>
+                    <a class="button" id="openPopup" href="#">Get Started</a>
                 </div>
                 <div class="header-slider-item">
                     <h2 class="slider-item-over">Unique and Modern Design</h2>
@@ -70,7 +71,7 @@
                     <p class="slider-item-below ">Nam liber tempor cum soluta nobis eleifend option congue nihil
                         imperdiet doming id quod mazim placerat facer possim
                         assum.</p>
-                    <a href="#">Get Started</a>
+                    <a class="button" id="openPopup" href="#">Get Started</a>
                 </div>
                 <div class="header-slider-item">
                     <h2 class="slider-item-over">Unique and Modern Design</h2>
@@ -78,7 +79,7 @@
                     <p class="slider-item-below ">Nam liber tempor cum soluta nobis eleifend option congue nihil
                         imperdiet doming id quod mazim placerat facer possim
                         assum.</p>
-                    <a class="button" href="#">Get Started</a>
+                    <a class="button" id="openPopup" href="#">Get Started</a>
                 </div>
                 <div class="header-slider-item">
                     <h2 class="slider-item-over">Unique and Modern Design</h2>
@@ -86,7 +87,7 @@
                     <p class="slider-item-below ">Nam liber tempor cum soluta nobis eleifend option congue nihil
                         imperdiet doming id quod mazim placerat facer possim
                         assum.</p>
-                    <a class="button" href="#">Get Started</a>
+                    <a class="button" id="openPopup" href="#">Get Started</a>
                 </div>
             </div>
         </div>
@@ -633,6 +634,40 @@
         </div>
     </footer>
     <button id="myBtnUp" title="Go to top">Top</button>
+    <div class="popup-slider">
+        <div class="container-popup">
+            <header>
+
+            </header>
+            <span class="close">&times;</span>
+            <h1 class="text-center">Enter your data</h1>
+            <form class="registration-form">
+                <label class="col-one-half">
+                    <span class="label-text">First Name</span>
+                    <input type="text" name="firstName" required pattern="[A-Za-zА-Яа-яЁё]{1,15}">
+                </label>
+                <label class="col-one-half">
+                    <span class="label-text" pattern="[A-Za-zА-Яа-яЁё]{1,15}">Last Name</span>
+                    <input type="text" name="lastName" required>
+                </label>
+                <label>
+                    <span class="label-text">Email</span>
+                    <input type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        title="Invalid email address">
+                </label>
+                <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Add your comment about product"
+                    required></textarea>
+                <label class="checkbox">
+                    <input type="checkbox" name="newsletter">
+                    <span>Sign me up for the weekly newsletter.</span>
+                </label>
+                <div class="text-center">
+                    <button class="submit" name="register">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/045953e5cb.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/flickity.pkgd.min.js"></script>
