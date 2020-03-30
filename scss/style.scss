@@ -6,6 +6,7 @@ $colorFooterWaxom:#959595;
 $alternativeFonts: Arial, Helvetica, sans-serif;
 html {
   scroll-behavior: smooth;
+    -ms-scroll-chaining: smooth;
 }
 * {
     box-sizing: border-box;
@@ -73,7 +74,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: $colorWhite;
-    .header-up-active.active {
+    .header-up-active.active-btn-up {
         background-color: rgba(17, 17, 17, 0.95);
         z-index: 1000;
         transition: all 2s;

@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  -ms-scroll-chaining: smooth;
 }
 
 * {
@@ -53,7 +54,7 @@ header {
   color: #fff;
 }
 
-header .header-up-active.active {
+header .header-up-active.active-btn-up {
   background-color: rgba(17, 17, 17, 0.95);
   z-index: 1000;
   -webkit-transition: all 2s;

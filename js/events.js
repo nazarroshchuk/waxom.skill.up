@@ -1,12 +1,13 @@
 // Menu fixed scroll
-const menuFixed = document.querySelector('.header-up-active');
+var menuFixed = document.querySelector('.header-up-active');
 document.addEventListener('scroll', function () {
     if (document.documentElement.scrollTop > 50) {
-        menuFixed.classList.add('active');
+        menuFixed.classList.add('active-btn-up');
     } else {
-        menuFixed.classList.remove('active');
+        menuFixed.classList.remove('active-btn-up');
     }
 });
+
 //Get the button
 const myButton = document.getElementById("myBtnUp");
 
@@ -19,7 +20,6 @@ function scrollFunction() {
         myButton.style.display = "none";
     }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
@@ -27,7 +27,8 @@ function topFunction() {
 }
 myButton.addEventListener('click', function () {
     topFunction();
-})
+});
+
 //Popup
 const closeBtnPopup = document.querySelector('.close');
 const popup = document.querySelector('.popup-in-slider');
