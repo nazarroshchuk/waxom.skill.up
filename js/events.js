@@ -12,8 +12,6 @@ const myButton = document.getElementById("myBtnUp");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.addEventListener('scroll', function () { scrollFunction() });
-window.addEventListener('click', function () { topFunction() });
-
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         myButton.style.display = "block";
@@ -27,6 +25,9 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+myButton.addEventListener('click', function () {
+    topFunction();
+})
 //Popup
 const closeBtnPopup = document.querySelector('.close');
 const popup = document.querySelector('.popup-in-slider');
