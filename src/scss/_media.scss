@@ -1,0 +1,317 @@
+@media (min-width: 1980px) {
+    .header-slider .flickity-prev-next-button.previous {
+   left: -15%;
+}
+    .header-slider .flickity-prev-next-button.next {
+    right: -15%;
+}
+}
+@media (max-width: 1400px) {
+    .header-slider {
+        .flickity-prev-next-button.previous {
+            left: 50px;
+                
+        }   
+        .flickity-prev-next-button.next {
+            right: 50px;
+        }
+    } 
+}
+@media (max-width: 1280px) {
+    .about-waxom .about-waxom-content {
+      padding: 65px;
+      justify-content: center;
+    }  
+    .about-waxom .waxom-items,
+    .about-waxom .recent-items,
+    .about-waxom .twitter-items,
+    .about-waxom .widget-items {
+        padding: 50px;
+    } 
+    footer .wrap {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1230px) {
+    header .header-up-active .wrapper-header-up {
+        
+        .header-up {
+            justify-content: space-between;
+            nav {
+                ul {
+                    margin: 0 0 0 30px;
+                }
+            }   
+        }
+        .header-icon {
+            margin: 0 auto;
+        }
+    }
+    .realisation {
+        p {
+            padding: 30px;
+        }
+    }
+    .recent-posts-slider {
+        margin: 0 30px;
+    }
+    .about-waxom-content {
+      padding: 65px;
+    }
+    .recent-posts .recent-posts-slider  .flickity-prev-next-button.previous {
+        left: 41%;
+    }
+    .recent-posts .recent-posts-slider .flickity-prev-next-button.next {
+        right: 41%;
+    }
+}
+@media (max-width: 1185px) {
+    .exellent .exellent-items {
+        padding: 30px 0;
+    }
+}
+@media (max-width: 1171px) {
+    .projects-galery {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1080px) {
+     .exellent img {
+        display: none;
+    }
+}
+@media (max-width: 1030px) {
+    .exellent-items {
+        margin: 0 30px;
+        font-size: 0.9em;
+    }
+    .partners img {
+        margin: 20px;
+    }
+}
+@media (max-width: 960px) {
+    header .header-up-active .wrapper-header-up {
+        .header-icon {
+            padding: 20px 0;
+            margin: 0 auto;
+        }
+    }
+    header .header-up-active.active-btn-up {
+        height: 160px;
+    }
+    .exellent .wrapper {
+        justify-content: center; 
+    }
+    .exellent img {
+        display: none;
+    }
+    .statistics {
+        .statistic-item {
+                margin: 0;
+                padding: 30px;
+            &+.statistic-item {
+                margin: 0;
+                padding: 30px;
+            }
+        }
+    }
+     header {
+        .header-slider {
+            .flickity-prev-next-button.previous,
+            .flickity-prev-next-button.next {
+                display: none;
+            } 
+        }
+    }
+}
+@media (max-width: 850px) {
+        header .header-up-active .wrapper-header-up {
+        .header-up {
+            padding-top: 20px;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            .logo-wrap {
+                padding: 20px;
+            }
+            nav {
+                ul {
+                    margin: 20px;
+                }
+            }
+            .header-icon {
+            margin: 0;
+            padding: 0;
+            } 
+        }
+    }
+    header .header-up-active .wrapper-header-up .header-up .logo-wrap {
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width: 778px) {
+     header   {
+        .header-fullwrap .header-up-active.active-btn-up{
+        background-color: none;
+        position: static;
+        height: auto;
+        }
+        .wrapper-header-up .header-up {
+            flex-direction: column;
+            position: static;
+        }
+        .wrapper-header-up .header-up nav ul {
+           max-width: 300px ;
+           flex-direction: column;
+           text-align: center;
+       }
+       .wrapper-header-up .header-up nav ul li {
+           padding: 10px 0;
+       }
+       .header-up-active .wrapper-header-up .header-up .header-icon {
+           padding-bottom: 20px;
+       }
+       .wrapper-header-up .header-up nav ul a {
+           font-size: 30px;
+       }
+        .header-slider-item {
+            h1,h2 p {
+                padding: 20px;
+            }
+            h1 {
+                line-height: 60px;
+            }
+            p{
+                padding: 0 40px;
+            }
+        }
+    }
+    .projects-galery {
+        padding: 40px 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .multipurpose .wrapper {
+        flex-direction: column;
+        align-content: center;
+    }
+    .multipurpose .multipurpose-btn a {
+        margin: 0 0 35px 0;
+
+    }
+     .exellent-items {
+        margin: 0 30px;
+        font-size: 0.9em;
+    }
+    .about-waxom  {
+        .waxom-items,
+        .recent-items,
+        .twitter-items,
+        .widget-items {
+            padding: 20px;
+        }
+    }
+    .header-slider .header-slider-item {
+    
+    }
+}
+@media (max-width: 685px) {
+    .header-slider-content {
+        margin: 50px 20px 20px 20px;
+        font-size: 0.5em;
+        line-height: 49px;
+    }
+    .header-slider-content a {
+        line-height: 28px;
+    }
+    .header-slider-content p {
+        width: auto;
+    }
+    .logo-wrap {
+        padding-top: 20px;
+    }
+    .projects-menu ul {
+        padding: 0;
+    }
+    .projects-menu ul li {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 625px) {
+      header {
+        .header-up {
+            nav {
+                ul {
+                    width: 260px;
+                }
+            }  
+        }
+        .header-slider {
+            .flickity-viewport {
+                height: 740px;
+            }
+            .header-slider-item {
+                padding-top: 90px;
+                h1,h2  {
+                    padding: 10px;
+                    line-height: 45px;
+                }
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .services .services-items .services-item + .services-item {
+        margin: 0 auto;
+    }
+    .slider-title {
+        line-height: 35px;
+        font-size: 2em;
+    }
+    .slider-item-over {
+        font-size: 1.5em;
+        line-height: 60px;
+    }
+    .exellent .exellent-items {
+        padding: 20px 0;
+    }
+
+}
+@media (max-width: 435px) {
+    .about-waxom .widget-items .widget-item-galery {
+        justify-content: center;
+    }
+    .about-waxom .widget-items .widget-item-galery img {
+        width: 100%;
+    }
+     footer .menu {  
+        padding: 20px 30px;
+        justify-content: center;
+    }
+    footer ul {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+@media (max-width: 375px) {
+   .exellent {
+       .exellent-items {
+            margin: 0;
+            padding: 40px;
+        }    
+    }
+    .popup-slider,
+    .popup-slider::after {
+        width: 90%;
+    }
+    body #myBtnUp {
+        right: 50px;
+    }
+    header .header-up-active .wrapper-header-up .header-up nav ul {
+        margin: 0;
+    }
+}
